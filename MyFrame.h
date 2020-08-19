@@ -12,11 +12,12 @@ private:
     void OnHello(wxCommandEvent& event);
     void OnExit(wxCommandEvent& event);
     void OnAbout(wxCommandEvent& event);
-    wxTextCtrl* m_txt_in;
-    wxTextCtrl* m_txt_out;
+    //wxTextCtrl* m_txt_in;
+protected:
+    wxTextCtrl* m_txt_out=NULL;
     wxString filein;
-    //wxTextCtrl* textctrl=NULL;
-    //wxTextCtrl* m_txt_in=NULL;		/*Text Box for input file*/
+    wxTextCtrl* textctrl=NULL;
+    wxTextCtrl* m_txt_in=NULL;		/*Text Box for input file*/
 
 };
 enum
